@@ -1,0 +1,20 @@
+import math
+
+a = float(input("Enter a: "))
+b = float(input("Enter b: "))
+c = float(input("Enter c: "))
+
+d = b*b - 4*a*c
+
+if d > 0:
+    r1 = (-b + math.sqrt(d)) / (2*a)
+    r2 = (-b - math.sqrt(d)) / (2*a)
+    print("Two real roots:", r1, "and", r2)
+    print(" Bhavya Nandal")
+elif d == 0:
+    r = -b / (2*a)
+    print("One real root:", r)
+    print(" Bhavya Nandal")
+else:
+    print("Roots are imaginary")
+    print(" Bhavya Nandal")
