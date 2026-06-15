@@ -1,19 +1,8 @@
-#include <stdio.h>
+lst = [12, 45, 2, 67, 23]
 
-int main() {
-    int n;
-    printf("Enter size: ");
-    scanf("%d", &n);
+largest = lst[0]
+for num in lst:
+    if num > largest:
+        largest = num
 
-    int arr[n];
-    for (int i = 0; i < n; i++)
-        scanf("%d", &arr[i]);
-
-    int max = arr[0];
-    for (int i = 1; i < n; i++)
-        if (arr[i] > max) max = arr[i];
-    printf("\nBhavya Nandal\n");
-    printf("Largest = %d\n", max);
-    printf("\nBhavya Nandal\n");
-    return 0;
-}
+print("Largest number:", largest)

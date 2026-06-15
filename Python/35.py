@@ -1,16 +1,8 @@
-#include <stdio.h>
+def power(x, y):
+    if y == 0:
+        return 1
+    return x * power(x, y - 1)
 
-long long power(int x, int y) {
-    if (y == 0) return 1;
-    return x * power(x, y - 1);
-}
-
-int main() {
-    int x, y;
-    printf("Enter x and y: ");
-    scanf("%d %d", &x, &y);
-
-    printf("Result = %lld\n", power(x, y));
-    printf("\nBhavya Nandal\n");
-    return 0;
-}
+x = int(input("Enter x: "))
+y = int(input("Enter y: "))
+print("Result:", power(x, y))

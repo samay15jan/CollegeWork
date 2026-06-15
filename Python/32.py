@@ -1,12 +1,5 @@
-#include <stdio.h>
+def volume(l=1, b=1, h=1):
+    return l * b * h
 
-int volume(int l, int b, int h) {
-    return l * b * h;
-}
-
-int main() {
-    int l = 5, b = 4, h = 3;
-    printf("Volume = %d\n", volume(l, b, h));
-    printf("\nBhavya Nandal\n");
-    return 0;
-}
+print("Volume with defaults:", volume())
+print("Volume with values:", volume(5, 4, 3))

@@ -1,15 +1,7 @@
-#include <stdio.h>
+def to_minutes(hours, minutes):
+    return hours * 60 + minutes
 
-int toMinutes(int h, int m) {
-    return h * 60 + m;
-}
+h = int(input("Enter hours: "))
+m = int(input("Enter minutes: "))
 
-int main() {
-    int h, m;
-    printf("Enter hours and minutes: ");
-    scanf("%d %d", &h, &m);
-
-    printf("Total Minutes = %d\n", toMinutes(h, m));
-    printf("\nBhavya Nandal\n");
-    return 0;
-}
+print("Total minutes:", to_minutes(h, m))

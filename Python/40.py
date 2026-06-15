@@ -1,23 +1,9 @@
-#include <stdio.h>
+def is_positive(n):
+    return n > 0
 
-int main() {
-    int n;
-    printf("Enter size: ");
-    scanf("%d", &n);
+lst = [-10, 5, -3, 8, 0, -2, 7]
 
-    int arr[n], pos[n], k = 0;
-    for (int i = 0; i < n; i++)
-        scanf("%d", &arr[i]);
+positive_list = list(filter(is_positive, lst))
 
-    for (int i = 0; i < n; i++) {
-        if (arr[i] > 0)
-            pos[k++] = arr[i];
-    }
-
-    printf("Positive numbers: ");
-    for (int i = 0; i < k; i++)
-        printf("%d ", pos[i]);
-
-    printf("\nBhavya Nandal\n");
-    return 0;
-}
+print("Original list:", lst)
+print("Positive numbers:", positive_list)

@@ -1,27 +1,8 @@
-#include <stdio.h>
+lst = [1, 2, 2, 3, 4, 4, 5]
+unique = []
 
-int main() {
-    int n;
-    printf("Enter size: ");
-    scanf("%d", &n);
+for item in lst:
+    if item not in unique:
+        unique.append(item)
 
-    int arr[n];
-    for (int i = 0; i < n; i++)
-        scanf("%d", &arr[i]);
-
-    printf("After removing duplicates: ");
-    for (int i = 0; i < n; i++) {
-        int isDup = 0;
-        for (int j = 0; j < i; j++) {
-            if (arr[i] == arr[j]) {
-                isDup = 1;
-                break;
-            }
-        }
-        if (!isDup)
-            printf("%d ", arr[i]);
-    }
-    printf("\nBhavya Nandal\n");
-
-    return 0;
-}
+print("List without duplicates:", unique)

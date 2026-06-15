@@ -1,16 +1,8 @@
-#include <stdio.h>
+def gcd(a, b):
+    if b == 0:
+        return a
+    return gcd(b, a % b)
 
-int gcd(int a, int b) {
-    if (b == 0) return a;
-    return gcd(b, a % b);
-}
-
-int main() {
-    int a, b;
-    printf("Enter two numbers: ");
-    scanf("%d %d", &a, &b);
-
-    printf("GCD = %d\n", gcd(a, b));
-    printf("\nBhavya Nandal\n");
-    return 0;
-}
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+print("GCD:", gcd(a, b))
